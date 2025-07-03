@@ -16,24 +16,24 @@ import {
 
 const router = Router();
 
-router.get('/contacts', ctrlWrapper(getContactsController));
+router.get('/', ctrlWrapper(getContactsController));
 router.get(
-    '/contacts/:contactId',
+    '/:contactId',
     isValidId,
     ctrlWrapper(getContactByIdController)
 );
 router.post(
-    '/contacts',
+    '/',
     validateBody(createContactSchema),
     ctrlWrapper(createContactController)
 );
 router.delete(
-    '/contacts/:contactId',
+    '/:contactId',
     isValidId,
     ctrlWrapper(deleteContactController)
 );
 router.patch(
-    '/contacts/:contactId',
+    '/:contactId',
     isValidId,
     validateBody(updateContactSchema),
     ctrlWrapper(patchContactController)
