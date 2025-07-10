@@ -12,7 +12,6 @@ requestBody:
         type: object
         required:
           - _id
-          - userId
           - name
           - phoneNumber
           - contactType
@@ -21,10 +20,6 @@ requestBody:
             description: "Contact's id"
             type: string
             example: 65e4decdd286b30065d54af9
-          userId:
-            description: "Contact's id"
-            type: string
-            example: 65e42ecdd286b30065dssa21
           name:
             description: "Contact's name"
             type: string
