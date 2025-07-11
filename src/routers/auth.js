@@ -14,10 +14,10 @@ import {
   refreshUserSessionController,
   sendResetEmailController,
   resetPasswordController,
-  loginWithGoogleController
+  //loginWithGoogleController
 } from '../controllers/auth.js';
 import { validateBody } from '../middlewares/validateBody.js';
-import { getGoogleOAuthUrlController } from '../controllers/auth.js';
+//import { getGoogleOAuthUrlController } from '../controllers/auth.js';
 
 const router = Router();
 
